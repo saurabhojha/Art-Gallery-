@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<title>Bootstrap gallery Template</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!--font-->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--fancybox-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+	<style type="text/css">
+	.navbar{
+		color: white;
+		background-color: #2c3e50;
+		margin: 0%;
+	}
+	.navbar-inverse .navbar-nav .active a,.navbar-inverse .navbar-nav .active a:focus,.navbar-inverse .navbar-nav .active a:hover{
+		background-color:#2c3e50;
+		color: white;
+	}
+	.navbar-inverse .navbar-nav li a{
+		color: #D5D5D5;
+	}
+	body{
+		font-family: 'Raleway', sans-serif;
+		background-color: #D5D5D5;
+
+	}
+	.container{
+	  	margin: 2% auto;
+	  }
+	.gallery {
+
+     width: 100%;
+	    min-height: 100%; 
+     position: relative;
+     background-size: cover;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+
+
+	.gallery-image{
+		
+		background-attachment: fixed;
+        background-position: center;
+       background-repeat: no-repeat;
+        background-size: cover;
+		position: relative;
+		display: block;
+	}
+	.gallery:hover .gallery-image{
+		filter: blur(3px);
+		
+	}
+	.gallery:hover .gallery-text{
+		visibility: visible;
+		opacity: 1;
+	}
+	.gallery-text{
+	    position: absolute;
+	    top: 0; right: 0;
+	    bottom: 0; left: 0;
+	    width: 100%;
+	    height: 100%; 
+	    text-align: center;
+	    opacity: 0;
+	    visibility: hidden;
+	    -webkit-transition: opacity 0.6s;
+	    -moz-transition: opacity 0.6s;
+	    transition: opacity 0.6s;
+       vertical-align:middle;
+       line-height:500px;
+	}
+	.gallery-text h3{
+	    color: #34495e;
+	    display: inline-table;
+        vertical-align:middle;
+        line-height:100%;            
+	}
+	@media(max-width:600px)
+	{ 
+
+		.gallery-text,.gallery{
+			display: none;
+
+		}
+	}
+	.photo-row{
+		
+	padding:0 6px;}
+
+	.photo-row img{margin-bottom: 4px;
+		padding: 6px;
+
+	}
+	.photo-col{
+		float:left;
+
+		width:33.333333%;
+	}
+	
+
+
+</style>
+<script>
+</script>
+</head>
+<body>
+	<!--nav-->
+	<nav class="navbar navbar-inverse " style="border-radius:0%;border-color: transparent;background-color:#2c3e50">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+					<i class="fa fa-bars" style="color:white;"></i>
+
+				</button>
+				<a class="navbar-brand"  style="color: white;" href="https://webandcreate.com" target="_blank" title="WEBandCREATE">Your Art Gallery Name</a>
+			</div>
+			<div class="collapse navbar-collapse  navbar-right" id="mynavbar" >
+				<ul class="nav navbar-nav">
+					<li class="active  navhover"><a href="#home">Home</a></li>
+					<li class="navhover"><a href="#art">Art Work</a></li> 
+					<li class="navhover"><a href="#follow">Follow</a></li>  
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="gallery container-fluid " style="padding-bottom: 8px;">
+		<div class=" gallery-image">
+			<img src="abstract_art1.jpg" class="img-responsive">
+		</div>
+		<div class="gallery-text">
+		<h3 style="font-size: 50px"><b>The true work of art is but a shadow of the divine perfection-Michelangelo</b></h3>  
+		</div>      
+	</div>
+
+
+  
+    <!--gallery-->
+	<div class="container-fluid" id="art" style="background-color: white;color:#2c3e50;font-size:70px">
+		<center><h3><b>My Art Works For You!!</b></h3></center>
+	</div>
+	<div class="container-fluid" style="background-color: #34495e;padding:0%" >
+  <div class="photo-row">
+  <div class="photo-col">
+  	<!--data-fancybox="gallery" is used for fancybox-->
+    <a data-fancybox="gallery" href="abstract_art01.jpg" ><img src="abstract_art01.jpg" style="width:100%"></a>
+    <a data-fancybox="gallery" href="abstract_art4.jpg" ><img src="abstract_art4.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art3.jpg" ><img src="abstract_art3.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art18.jpg" ><img src="abstract_art18.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art5.jpg" ><img src="abstract_art5.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art6.jpg" ><img src="abstract_art6.jpg" style="width:100%"></a>
+  </div>
+  <div class="photo-col">
+    <a data-fancybox="gallery" href="abstract_art7.jpg" ><img src="abstract_art7.jpg" style="width:100%"></a>
+    <a data-fancybox="gallery" href="abstract_art8.jpg" ><img src="abstract_art8.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art14.jpg" ><img src="abstract_art14.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art10.jpg" ><img src="abstract_art10.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art11.jpg" ><img src="abstract_art11.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art15.jpg" ><img src="abstract_art15.jpg" style="width:100%"></a>
+  </div>
+  <div class="photo-col">
+    <a data-fancybox="gallery" href="abstract_art13.jpg" ><img src="abstract_art13.jpg" style="width:100%"></a>
+    <a data-fancybox="gallery" href="abstract_art9.jpg" ><img src="abstract_art9.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art12.jpg" ><img src="abstract_art12.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art16.jpg" ><img src="abstract_art16.jpg" style="width:100%"></a>
+    <a data-fancybox="gallery" href="abstract_art17.jpg" ><img src="abstract_art17.jpg" style="width:100%"></a>
+	<!--<img src="abstract_art4.jpg" style="width:100%">-->
+	
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+  $('[data-fancybox]').fancybox({
+  loop: true,
+   buttons: [
+        "zoom",
+        "share",
+        "slideShow",
+        "fullScreen",
+        "download",
+        "thumbs",
+        "close"
+    ],
+
+});
+</script>
+
+      <!--footer-->
+		<div class="container-fluid" style="background-color: white" id="follow">
+			<div class="container" style="background-color: white">
+				<div class="row">
+					<div class="col-sm-2">
+						<center><h4 style="font-size: 50px;color: #34495e"><i class="fa fa-instagram" aria-hidden="true"></i>
+						</center>
+					</div>
+					<div class="col-sm-2">
+
+						<center><h4 style="font-size: 50px;color: #34495e"><i class="fa fa-twitter-square" aria-hidden="true"></i></center>
+						</div>
+						<div class="col-sm-2">
+							<center><h4 style="font-size: 50px;color: #34495e"><i class="fa fa-facebook-official" aria-hidden="true"></i></h4></center>
+						</div>
+						<div class="col-sm-2">
+						<center><h4 style="font-size: 50px;color: #34495e"><i class="fa fa-pinterest" aria-hidden="true"></i>
+						</center>
+					</div>
+					<div class="col-sm-2">
+
+						<center><h4 style="font-size: 50px;color: #34495e"><i class="fa fa-linkedin" aria-hidden="true"></i></center>
+						</div>
+						<div class="col-sm-2">
+							<center><h4 style="font-size: 50px;color: #34495e"><i class="fa fa-snapchat" aria-hidden="true"></i></h4></center>
+						</div>
+
+					</div>			
+				</div>
+			</div>
+			<footer style="padding-top: 0%;background: #34495e;" >
+				<center>
+					<p style="color: white;"><b>Bootstrap Template Designed By <a href="https://webandcreate.com" target="_blank" title="WEBandCREATE" style="color:white">WEBandCREATE</a></b></p>
+				</center>
+			</footer>
+		</body>
+		</html>

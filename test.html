@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<title>Test for fancy box</title>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!--font-->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--fancybox-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+<style type="text/css">
+	.photo-row img{margin-bottom: 4px;
+		padding: 6px;
+
+	}
+	.photo-col{
+		float:left;
+
+		width:33.333333%;
+	}
+</style>
+</head>
+<body>
+	<div class="container-fluid" id="art" style="background-color: white;color:#2c3e50;font-size:70px">
+		<center><h3><b>My Art Works For You!!</b></h3></center>
+	</div>
+	<div class="container-fluid" style="background-color: #34495e;padding:0%" >
+  <div class="photo-row">
+  <div class="photo-col">
+  	<!--data-fancybox="gallery" is used for fancybox-->
+    <a data-fancybox="gallery" href="abstract_art01.jpg" ><img src="abstract_art01.jpg" style="width:100%"></a>
+    <a data-fancybox="gallery" href="abstract_art4.jpg" ><img src="abstract_art4.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art3.jpg" ><img src="abstract_art3.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art18.jpg" ><img src="abstract_art18.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art5.jpg" ><img src="abstract_art5.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art6.jpg" ><img src="abstract_art6.jpg" style="width:100%"></a>
+  </div>
+  <div class="photo-col">
+    <a data-fancybox="gallery" href="abstract_art7.jpg" ><img src="abstract_art7.jpg" style="width:100%"></a>
+    <a data-fancybox="gallery" href="abstract_art8.jpg" ><img src="abstract_art8.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art14.jpg" ><img src="abstract_art14.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art10.jpg" ><img src="abstract_art10.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art11.jpg" ><img src="abstract_art11.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art15.jpg" ><img src="abstract_art15.jpg" style="width:100%"></a>
+  </div>
+  <div class="photo-col">
+    <a data-fancybox="gallery" href="abstract_art13.jpg" ><img src="abstract_art13.jpg" style="width:100%"></a>
+    <a data-fancybox="gallery" href="abstract_art9.jpg" ><img src="abstract_art9.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art12.jpg" ><img src="abstract_art12.jpg" style="width:100%"></a>
+	<a data-fancybox="gallery" href="abstract_art16.jpg" ><img src="abstract_art16.jpg" style="width:100%"></a>
+    <a data-fancybox="gallery" href="abstract_art17.jpg" ><img src="abstract_art17.jpg" style="width:100%"></a>
+	<!--<img src="abstract_art4.jpg" style="width:100%">-->
+	
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+  $('[data-fancybox]').fancybox({
+  loop: true,
+   buttons: [
+        "zoom",
+        "share",
+        "slideShow",
+        "fullScreen",
+        "download",
+        "thumbs",
+        "close"
+    ],
+
+});
+</script>
+</body>
+</html>
